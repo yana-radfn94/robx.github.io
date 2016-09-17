@@ -33,10 +33,18 @@ nav a:last-child{
   border-radius: 2em;
   color: rgb(235,67,31);
 }
-.lesson img{
+.lesson {
+  text-align: center;
+}
+.lesson picture{
+  margin: auto;
+  height: 200px;
+  display: flex;
+}
+.lesson picture img{
   margin: auto;
   display: block;
-
+  vertical-align: middle;
 }
 .phonetag{
   position: fixed;
@@ -52,6 +60,9 @@ nav a:last-child{
   position: relative;
   left: 20px;
   font-size: 20px;
+}
+hr{
+  border: 1px solid rgb(214,214,214);
 }
 /*FORM*/
 input{
