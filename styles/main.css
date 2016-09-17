@@ -53,6 +53,13 @@ nav a:last-child{
   left: 20px;
   font-size: 20px;
 }
+/*FORM*/
+input{
+  width: 100%;
+  border-radius: 2em;
+  height: 40px;
+  border-style: none;
+}
 /* HELPERS */
 .text-center{
   text-align: center !important;
