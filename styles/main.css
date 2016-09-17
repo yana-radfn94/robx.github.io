@@ -1,3 +1,71 @@
 body{
   background: rgb(235,236,236);
+
+}
+.row{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section,footer{
+  padding-top: 40px;
+    padding-bottom: 40px;
+}
+header{
+  border-bottom: 1px solid gray;
+}
+nav{
+  padding: 20px;
+}
+nav a{
+  text-decoration: none;
+  padding: 10px 20px;
+  color: rgb(65,65,65);
+}
+nav a.vk{
+  color: rgb(54,74,254);
+    border: 5px solid rgb(54,74,254);
+    border-radius: 2em;
+    padding: 10px
+}
+
+nav a:last-child{
+  border: 5px solid rgb(235,67,31);
+  border-radius: 2em;
+  color: rgb(235,67,31);
+}
+.lesson img{
+  margin: auto;
+  display: block;
+
+}
+.phonetag{
+  position: fixed;
+  background-image: url("../ribbon.svg");
+  width: 148px;
+  height: 44px;
+
+}
+.phonetag a{
+  text-decoration: none;
+  color: #fff;
+  top: 10px;
+  position: relative;
+  left: 20px;
+  font-size: 20px;
+}
+/* HELPERS */
+.text-center{
+  text-align: center !important;
+}
+.bg-white{
+  background: #fff !important;
+}
+.bg-lightgray{
+  background: rgb(242,242,242) !important;
+}
+.mb40{
+  margin-bottom: 40px !important;
+}
+.ib{
+  display: inline-block !important;
 }
