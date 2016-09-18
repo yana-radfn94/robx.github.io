@@ -54,7 +54,34 @@ nav a:last-child{
   background-image: url("../ribbon.svg");
   width: 148px;
   height: 44px;
-
+}
+.metro{
+  border-radius: 2em;
+  padding: 5px 10px;
+  border-width: 5px;
+  border-style: solid;
+  display: inline-block;
+}
+.metro.m-blue{
+  border-color: rgb(15,119,193);
+}
+.metro.m-orange{
+  border-color: rgb(243,128,24);
+}
+.metro.m-red{
+  border-color: rgb(229,0,28);
+}
+.metro.m-orange{
+  border-color: rgb(243,128,24);
+}
+.quantumWizButtonPaperbuttonContent{
+  background-color: rgb(235,67,31);
+  border-radius: 2em;
+  border: 5px solid rgb(235,67,31);
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 20px;
+text-align: center;
 }
 .phone,.email{
   font-size: 1.3em;
