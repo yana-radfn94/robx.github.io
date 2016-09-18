@@ -33,6 +33,9 @@ nav a:last-child{
   border-radius: 2em;
   color: rgb(235,67,31);
 }
+.teacher{
+  text-align: center;
+}
 .lesson {
   text-align: center;
 }
