@@ -8,8 +8,17 @@
   <link rel="stylesheet" href="./styles/normalize.css" type="text/css" >
   <link rel="stylesheet" href="./styles/flexboxgrid.css" type="text/css" >
   <link rel="stylesheet" href="./styles/main.css" type="text/css" >
-
+  <link rel="stylesheet" href="./styles/unslider.css" type="text/css" >
+  <link rel="stylesheet" href="./styles/unslider-dots.css" type="text/css" >
+  <script src="scripts/jquery-3.1.0.min.js"></script>
+  <script src="scripts/unslider-min.js"></script>
   <title>RobX</title>
+  <script>
+  $(function() { $('.banner').unslider({
+autoplay: true, infinite: true
+
+  }) })
+  </script>
 </head>
 <body>
 <header >
@@ -121,6 +130,21 @@
   <div class="container-fluid ">
     <div class="row ">
       <h2 class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">Преподаватели</h2>
+      <div class="teacher col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <img src="">
+        <h3>Дмитрий Спивак</h3>
+        <p>Основатель лаборатории технического творчества для детей Fab Lab в г. Санкт-Петербурге. Проходил стажировку в Fab Lab Barcelona (г. Барселона, Испания) и Fab Lab Aalto (г. Хельсинки, Финляндия). Преподавал современные технологии в 67 Гимназии Петроградского р-на г. Санкт-Петербурга</p>
+      </div>
+      <div class="teacher col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <img src="">
+        <h3>Виталий Филипповский</h3>
+        <p>Магистр СПБГУ , МАТМЕХ, специальность: фундаментальная информатика и ифнормационные технологии. 2 года работы в кружке роботехники Kidsfab. Готовит детей к соревнованиям по робототехнике на базе Ardui- no IDE (C/C++)</p>
+      </div>
+      <div class="teacher col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <img src="">
+        <h3>Анастасия Подорова</h3>
+        <p>Студент 4 курса СПБПУ (Политех), кафедра Телематики при ЦНИИ РТК. Свера научных интересов: программироние в Robot C+ , C++ , программирование микроконтроллеров, алгоритмы взаимодействия групп роботов. Опыт работы в кружке робототехники - 1 год</p>
+      </div>
     </div>
   </div>
 </section>
@@ -156,21 +180,14 @@
   <div class="container-fluid ">
     <div class="row ">
       <h2 class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">Фотографии с занятий</h2>
-      <div class="teacher col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <img src="">
-        <h3>Дмитрий Спивак</h3>
-        <p>Основатель лаборатории технического творчества для детей Fab Lab в г. Санкт-Петербурге. Проходил стажировку в Fab Lab Barcelona (г. Барселона, Испания) и Fab Lab Aalto (г. Хельсинки, Финляндия). Преподавал современные технологии в 67 Гимназии Петроградского р-на г. Санкт-Петербурга</p>
-      </div>
-      <div class="teacher col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <img src="">
-        <h3>Виталий Филипповский</h3>
-        <p>Магистр СПБГУ , МАТМЕХ, специальность: фундаментальная информатика и ифнормационные технологии. 2 года работы в кружке роботехники Kidsfab. Готовит детей к соревнованиям по робототехнике на базе Ardui- no IDE (C/C++)</p>
-      </div>
-      <div class="teacher col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <img src="">
-        <h3>Анастасия Подорова</h3>
-        <p>Студент 4 курса СПБПУ (Политех), кафедра Телематики при ЦНИИ РТК. Свера научных интересов: программироние в Robot C+ , C++ , программирование микроконтроллеров, алгоритмы взаимодействия групп роботов. Опыт работы в кружке робототехники - 1 год</p>
-      </div>
+
+      <div class="banner">
+	<ul>
+		<li><img src="photos/photo.jpg" width="auto" height="400"></li>
+		<li>Another slide</li>
+		<li>My last slide</li>
+	</ul>
+</div>
     </div>
     </div>
 </section>
