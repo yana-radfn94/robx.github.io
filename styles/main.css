@@ -3,7 +3,7 @@ body{
 
 }
 .row{
-  max-width: 1200px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 section,footer{
@@ -21,17 +21,29 @@ nav a{
   padding: 10px 20px;
   color: rgb(65,65,65);
 }
+nav a:hover{
+  cursor: pointer;
+  color: rgba(65,65,65, 0.5);
+}
 nav a.vk{
   color: rgb(54,74,254);
     border: 5px solid rgb(54,74,254);
     border-radius: 2em;
     padding: 10px
 }
-
+nav a.vk:hover{
+  cursor: pointer;
+  color: rgba(54,74,254, 0.5);
+  border-color: rgba(54,74,254,0.5);
+}
 nav a:last-child{
   border: 5px solid rgb(235,67,31);
   border-radius: 2em;
   color: rgb(235,67,31);
+}
+nav a:last-child:hover{
+  color: rgba(235,67,31,0.5);
+  border-color: rgba(235,67,31, 0.5);
 }
 .teacher{
   text-align: center;
@@ -54,6 +66,7 @@ nav a:last-child{
   background-image: url("../ribbon.svg");
   width: 148px;
   height: 44px;
+  right: 0;
 }
 .metro{
   border-radius: 2em;
@@ -83,6 +96,12 @@ nav a:last-child{
   padding: 5px 20px;
 text-align: center;
 }
+.quantumWizButtonPaperbuttonContent:hover{
+  background-color: rgb(235,67,31,0.5);
+  border-color: rgb(235,67,31, 0.5);
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  }
 .phone,.email{
   font-size: 1.3em;
   text-align: center;
