@@ -442,11 +442,13 @@ autoplay: true, infinite: true
         <h3>Трамвайный пр., д.20</h3>
         <div>(Кировский район)</div>
         <div class="metro m-red">м. Ленинский проспект</div>
+        <div id="map2" style="height: 200px;"></div>
       </div>
       <div class="location col-xs-12 col-sm-6 col-md-3 col-lg-3">
         <h3>Выборгское шоссе, д. 156</h3>
         <div>(Выборгский район)</div>
         <div class="metro m-blue">м. Проспект Просвещения</div>
+        <div id="map3" style="height: 200px;"></div>
       </div>
     </div>
   </div>
@@ -486,7 +488,7 @@ autoplay: true, infinite: true
     // of the map controls.
 
     function initMap() {
-      var locations = [{lat: 59.9701, lng: 30.3158}, {lat: 59.928, lng: 30.4255}, {lat: 59.9701, lng: 30.3158}, {lat: 59.9701, lng: 30.3158}];
+      var locations = [{lat: 59.9701, lng: 30.3158}, {lat: 59.928, lng: 30.4255}, {lat: 59.8547, lng: 30.2715}, {lat: 60.0607, lng: 30.304}];
        var marker0 = new google.maps.Marker({
         position: locations[0],
         map: map0,
@@ -497,6 +499,16 @@ autoplay: true, infinite: true
        map: map1,
        title: 'Класс на Медиков (третий этаж, налево)'
      });
+     var marker2 = new google.maps.Marker({
+      position: locations[2],
+      map: map2,
+      title: 'Класс на Медиков (третий этаж, налево)'
+    });
+    var marker3 = new google.maps.Marker({
+     position: locations[3],
+     map: map3,
+     title: 'Класс на Медиков (третий этаж, налево)'
+   });
       var map0 = new google.maps.Map(document.getElementById('map0'), {
         zoom: 16,
         center: locations[0],
@@ -515,8 +527,28 @@ autoplay: true, infinite: true
           mapTypeIds: ['roadmap', 'terrain']
         }
       });
+      var map2 = new google.maps.Map(document.getElementById('map2'), {
+        zoom: 16,
+        center: locations[2],
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+          mapTypeIds: ['roadmap', 'terrain']
+        }
+      });
+      var map3 = new google.maps.Map(document.getElementById('map3'), {
+        zoom: 16,
+        center: locations[3],
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+          mapTypeIds: ['roadmap', 'terrain']
+        }
+      });
       marker0.setMap(map0);
       marker1.setMap(map1);
+      marker2.setMap(map2);
+      marker3.setMap(map3);
     }
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6lp_3Y5nPvcK-cUidrl9w7mPZoc2M6P8&callback=initMap">
