@@ -78,7 +78,7 @@ nav a:last-child:hover{
 }
 .phonetag{
   position: fixed;
-  background-image: url("../ribbon.svg");
+  background-image: url("../icons/ribbon.svg");
   width: 148px;
   height: 44px;
   right: 0;
