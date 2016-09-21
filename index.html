@@ -13,12 +13,14 @@
   <script src="scripts/jquery-3.1.0.min.js"></script>
   <script src="scripts/unslider-min.js"></script>
   <title>RobX</title>
+
   <script>
   $(function() { $('.banner').unslider({
 autoplay: true, infinite: true
 
   }) })
   </script>
+
 </head>
 <body>
 <header >
@@ -426,11 +428,15 @@ autoplay: true, infinite: true
         <h3>Медиков пр., д.5 </h3>
         <div>(Ленполиграфмаш)</div>
         <div class="metro m-blue">м. Петроградская</div>
+         <div id="map0" style="height: 200px;"></div>
+
+
       </div>
       <div class="location col-xs-12 col-sm-6 col-md-3 col-lg-3">
         <h3>Заневский пр., 53 к.2</h3>
         <div>(Красногвардейский район)</div>
         <div class="metro m-orange">м. Новочеркасская</div>
+        <div id="map1" style="height: 200px;"></div>
       </div>
       <div class="location col-xs-12 col-sm-6 col-md-3 col-lg-3">
         <h3>Трамвайный пр., д.20</h3>
@@ -475,5 +481,45 @@ autoplay: true, infinite: true
   </div>
   </div>
 </footer>
+  <script>
+    // You can set control options to change the default position or style of many
+    // of the map controls.
+
+    function initMap() {
+      var locations = [{lat: 59.9701, lng: 30.3158}, {lat: 59.928, lng: 30.4255}, {lat: 59.9701, lng: 30.3158}, {lat: 59.9701, lng: 30.3158}];
+       var marker0 = new google.maps.Marker({
+        position: locations[0],
+        map: map0,
+        title: 'Класс на Медиков (третий этаж, налево)'
+      });
+      var marker1 = new google.maps.Marker({
+       position: locations[1],
+       map: map1,
+       title: 'Класс на Медиков (третий этаж, налево)'
+     });
+      var map0 = new google.maps.Map(document.getElementById('map0'), {
+        zoom: 16,
+        center: locations[0],
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+          mapTypeIds: ['roadmap', 'terrain']
+        }
+      });
+      var map1 = new google.maps.Map(document.getElementById('map1'), {
+        zoom: 16,
+        center: locations[1],
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+          mapTypeIds: ['roadmap', 'terrain']
+        }
+      });
+      marker0.setMap(map0);
+      marker1.setMap(map1);
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6lp_3Y5nPvcK-cUidrl9w7mPZoc2M6P8&callback=initMap">
+  </script>
 </body>
 </html>
