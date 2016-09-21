@@ -117,7 +117,7 @@ nav a:last-child:hover{
 .metro.m-orange{
   border-color: rgb(243,128,24);
 }
-.quantumWizButtonPaperbuttonContent{
+input[type=submit]{
   background-color: rgb(235,67,31);
   border-radius: 2em;
   border: 5px solid rgb(235,67,31);
@@ -125,8 +125,12 @@ nav a:last-child:hover{
   font-size: 20px;
   padding: 5px 20px;
 text-align: center;
+width: 10em;
+margin: auto;
+display: block;
+font-weight: bold;
 }
-.quantumWizButtonPaperbuttonContent:hover{
+input[type=submit]:hover{
   background-color: rgb(235,67,31,0.5);
   border-color: rgb(235,67,31, 0.5);
   color: rgba(255,255,255,0.5);
@@ -148,10 +152,10 @@ hr{
   border: 1px solid rgb(214,214,214);
 }
 /*FORM*/
-input{
+input, select{
   width: 100%;
   border-radius: 2em;
-  height: 40px;
+  height: 50px;
   border-style: none;
 }
 /* HELPERS */
