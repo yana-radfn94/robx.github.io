@@ -81,6 +81,13 @@ nav a:last-child:hover{
 .lesson {
   text-align: center;
 }
+.left-border{
+  border-left: 1px solid rgb(213,213,213);
+}
+.unslider-arrow.prev,
+.unslider-arrow.next{
+  font-size: 60px;
+}
 .lesson picture{
   margin: auto;
   height: 200px;
