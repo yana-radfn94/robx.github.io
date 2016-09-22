@@ -1,1 +1,69 @@
-.unslider{overflow:auto;margin:0;padding:0}.unslider-wrap{position:relative}.unslider-wrap.unslider-carousel>li{float:left}.unslider-vertical>ul{height:100%}.unslider-vertical li{float:none;width:100%}.unslider-fade{position:relative}.unslider-fade .unslider-wrap li{position:absolute;left:0;top:0;right:0;z-index:8}.unslider-fade .unslider-wrap li.unslider-active{z-index:10}.unslider li,.unslider ol,.unslider ul{list-style:none;margin:0;padding:0;border:none}.unslider-arrow{position:absolute;left:20px;z-index:2;cursor:pointer}.unslider-arrow.next{left:auto;right:20px}
+.unslider {
+    /*overflow: hidden;*/
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.unslider-wrap {
+    position: relative;
+}
+
+.unslider-wrap.unslider-carousel>li {
+    float: left;
+}
+
+.unslider-vertical>ul {
+    height: 100%;
+}
+
+.unslider-vertical li {
+    float: none;
+    width: 100%;
+}
+
+.unslider-fade {
+    position: relative;
+}
+
+.unslider-fade .unslider-wrap li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 8;
+}
+
+.unslider-fade .unslider-wrap li.unslider-active {
+    z-index: 10;
+}
+
+.unslider li,.unslider ol,.unslider ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.unslider-arrow {
+    position: absolute;
+    left: 20px;
+    z-index: 2;
+    cursor: pointer;
+    top: 30%;
+    font-family: 'Open Sans' !important;
+    font-weight: 300;
+    width: 51px;
+    height: 100px;
+}
+
+.unslider-arrow.next {
+    left: auto;
+    right: -100px;
+     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='51' height='100'><line x1='1' y1='1' x2='50' y2='50' stroke-width='2' stroke-linecap='round' stroke='rgb(129,129,129)'  /><line x1='50' y1='50' x2='1' y2='99' stroke-linecap='round' stroke-width='2' stroke='rgb(129,129,129)' /> </svg>")  no-repeat;
+}
+.unslider-arrow.prev {
+    left: -100px;
+    right: auto;
+     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='51' height='100'><line x1='50' y1='1' x2='1' y2='50' stroke-width='2' stroke-linecap='round' stroke='rgb(129,129,129)'  /><line x1='1' y1='50' x2='50' y2='99' stroke-linecap='round' stroke-width='2' stroke='rgb(129,129,129)' /> </svg>")  no-repeat;
+}

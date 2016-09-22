@@ -17,17 +17,19 @@
 }
 .unslider-nav ol li {
   display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin: 0 4px;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  margin: 0 8px;
   background: transparent;
-  border-radius: 5px;
+  border-radius: 8px;
   overflow: hidden;
   text-indent: -999em;
-  border: 2px solid #fff;
+  border: 1px solid rgb(52,74,254);
   cursor: pointer;
 }
 .unslider-nav ol li.unslider-active {
-  background: #fff;
+  background: rgb(52,74,254);
+  border-width: 0;
   cursor: default;
 }
