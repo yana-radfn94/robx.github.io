@@ -33,11 +33,41 @@ select{
   background-color: #fff;
   background-color: #fff;
   text-align: center;
-  padding: 0 10px;
+
    background-image: none;
    -webkit-appearance: none;
       -moz-appearance: none;
            appearance: none;
+}
+.ss-select,
+.ss-required{
+  position: relative;
+}
+.ss-select:after{
+  display: block;
+  content: "˅";
+  font-family: monospace;
+  width: 40px;
+  height: 50px;
+  font-size: 40px;
+  vertical-align: middle;
+  position: absolute;
+  right: 0px;
+  top: 8px;
+  color: rgb(70,103,255);
+}
+.ss-required:after{
+  display: block;
+  content: "●";
+  font-family: monospace;
+  width: 40px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  color: rgb(241,90,41);
 }
 header div{
   padding-top: 5px;
@@ -83,6 +113,9 @@ nav a:last-child:hover{
 }
 .left-border{
   border-left: 1px solid rgb(213,213,213);
+}
+.bottom-border{
+  border-bottom: 1px solid rgb(213,213,213);
 }
 .unslider-arrow.prev,
 .unslider-arrow.next{
@@ -164,6 +197,14 @@ input, select{
   border-radius: 2em;
   height: 50px;
   border-style: none;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+option:disabled
+{
+    color: #ccc;
 }
 /* HELPERS */
 .text-center{
