@@ -9,9 +9,11 @@
   <link rel="stylesheet" href="./styles/flexboxgrid.css" type="text/css" >
   <link rel="stylesheet" href="./styles/main.css" type="text/css" >
   <link rel="stylesheet" href="./styles/unslider.css" type="text/css" >
+  <link rel="stylesheet" href="./styles/accordion.css" type="text/css" >
   <link rel="stylesheet" href="./styles/unslider-dots.css" type="text/css" >
   <script src="scripts/jquery-3.1.0.min.js"></script>
   <script src="scripts/unslider-min.js"></script>
+  <script src="scripts/accordion.js"></script>
   <title>RobX</title>
 
   <script>
@@ -176,12 +178,27 @@ autoplay: true, infinite: true
     <div class="row mb20">
     <h2 class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">Проекты которые делают дети</h2>
       <div class="text-center col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <iframe width="550" height="310" src="https://www.youtube.com/embed/oaXCDCn49y4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="550" height="310" src="https://www.youtube.com/embed/oaXCDCn49y4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen id="videoframe"></iframe>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <img src="icons/video.svg" width="31" height="25" class="ib"> <h4 class="ib">Проект пианино</h4>
-        <p>На занятии мы изучали параллельное подключение кнопок в электрической цепи, а также макетную плату.
-На практике мы воплотили эти знания в создание музыкального инструмента - пианино, в котором каждая клавиша соответствует своей ноте.</p>
+
+        <div id="accordion">
+          <h4 class="accordion-toggle" data-src="https://www.youtube.com/embed/oaXCDCn49y4?rel=0&amp;showinfo=0"><img src="icons/video.svg" width="31" height="25" class="ib"> <span class="ib">Проект пианино</span></h4>
+          <div class="accordion-content default">
+            <p>На занятии мы изучали параллельное подключение кнопок в электрической цепи, а также макетную плату.
+    На практике мы воплотили эти знания в создание музыкального инструмента - пианино, в котором каждая клавиша соответствует своей ноте.</p>
+          </div>
+          <h4 class="accordion-toggle" data-src="https://www.youtube.com/embed/uZB9qRUhM0Q?rel=0&amp;showinfo=0"><img src="icons/video.svg" width="31" height="25" class="ib"> <span>Вова и команда: семафор</span></h4>
+          <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet mauris eu turpis. Lorem ipsum dolor sit amet mauris eu turpis. Lorem ipsum dolor sit amet mauris eu turpis. Lorem ipsum dolor sit amet mauris eu turpis.</p>
+          </div>
+          <h4 class="accordion-toggle">Accordion 3</h4>
+          <div class="accordion-content">
+            <p>Vivamus facilisisnibh scelerisque laoreet.</p>
+          </div>
+        </div>
+
+
       <div>
     </div>
   </div>
