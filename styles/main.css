@@ -16,7 +16,7 @@ section#form img{
   mix-blend-mode: multiply;
 }
 header{
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(215,214,213);
   position: fixed;
   top: 0;
   width: 100%;
@@ -80,6 +80,7 @@ nav a{
   text-decoration: none;
   padding: 10px 20px;
   color: rgb(65,65,65);
+  font-size: 18px;
 }
 nav a:hover{
   cursor: pointer;
@@ -89,7 +90,9 @@ nav a.vk{
   color: rgb(54,74,254);
     border: 5px solid rgb(54,74,254);
     border-radius: 2em;
-    padding: 10px
+    padding: 10px;
+    font-weight: 800;
+    margin-left: 30px;
 }
 nav a.vk:hover{
   cursor: pointer;
@@ -100,6 +103,9 @@ nav a:last-child{
   border: 5px solid rgb(235,67,31);
   border-radius: 2em;
   color: rgb(235,67,31);
+  font-size: 18px;
+  font-weight: 800;
+  margin-left: 40px;
 }
 nav a:last-child:hover{
   color: rgba(235,67,31,0.5);
@@ -137,6 +143,13 @@ nav a:last-child:hover{
   width: 148px;
   height: 44px;
   right: 0;
+  box-sizing: border-box;
+  padding-top: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.phonetag a{
+
 }
 .metro{
   border-radius: 2em;
