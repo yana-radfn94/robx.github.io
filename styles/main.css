@@ -31,9 +31,7 @@ select{
   border-radius: 2em;
   border: 1px solid #fff;
   background-color: #fff;
-  background-color: #fff;
   text-align: center;
-
    background-image: none;
    -webkit-appearance: none;
       -moz-appearance: none;
@@ -44,7 +42,6 @@ select{
   position: relative;
 }
 .ss-select:after{
-  display: block;
   content: "˅";
   font-family: monospace;
   width: 40px;
@@ -53,8 +50,9 @@ select{
   vertical-align: middle;
   position: absolute;
   right: 0px;
-  top: 8px;
+  top: -1px;
   color: rgb(70,103,255);
+  z-index: 0;
 }
 .ss-required:after{
   display: block;
@@ -120,6 +118,9 @@ nav a:last-child:hover{
 .left-border{
   border-left: 1px solid rgb(213,213,213);
 }
+.right-border{
+  border-right: 1px solid rgb(213,213,213);
+}
 .bottom-border{
   border-bottom: 1px solid rgb(213,213,213);
 }
@@ -148,10 +149,12 @@ nav a:last-child:hover{
   font-size: 18px;
   font-weight: 600;
 }
-.phonetag a{
-
+.location h3{
+  margin: 0;
 }
+
 .metro{
+  margin-bottom: 20px;
   border-radius: 2em;
   padding: 5px 10px;
   border-width: 5px;
