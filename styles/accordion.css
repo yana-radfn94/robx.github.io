@@ -1,3 +1,7 @@
 .accordion-toggle {cursor: pointer;}
+.accordion-toggle:first-child{
+  margin-top: 0;
+  vertical-align: middle;
+}
  .accordion-content {display: none;}
  .accordion-content.default {display: block;}
