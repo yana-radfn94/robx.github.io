@@ -1,4 +1,8 @@
-.accordion-toggle {cursor: pointer;}
+.accordion-toggle {cursor: pointer; color: rgb(52,74,254); display: block; margin-bottom: 0;}
+.accordion-toggle img{
+  vertical-align: bottom;
+  margin-right: 10px;
+}
 .accordion-toggle:first-child{
   margin-top: 0;
   vertical-align: middle;

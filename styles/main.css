@@ -32,41 +32,12 @@ select{
   border: 1px solid #fff;
   background-color: #fff;
   text-align: center;
-   background-image: none;
-   -webkit-appearance: none;
-      -moz-appearance: none;
-           appearance: none;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
-.ss-select,
-.ss-required{
-  position: relative;
-}
-.ss-select:after{
-  content: "˅";
-  font-family: monospace;
-  width: 40px;
-  height: 50px;
-  font-size: 40px;
-  vertical-align: middle;
-  position: absolute;
-  right: 0px;
-  top: -1px;
-  color: rgb(70,103,255);
-  z-index: 0;
-}
-.ss-required:after{
-  display: block;
-  content: "●";
-  font-family: monospace;
-  width: 40px;
-  height: 50px;
-  font-size: 30px;
-  line-height: 50px;
-  position: absolute;
-  right: 0px;
-  top: 0;
-  color: rgb(241,90,41);
-}
+
 header div{
   padding-top: 5px;
   position: relative;
@@ -76,7 +47,7 @@ nav{
 }
 nav a{
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 9px 20px;
   color: rgb(65,65,65);
   font-size: 18px;
 }
@@ -86,10 +57,10 @@ nav a:hover{
 }
 nav a.vk{
   color: rgb(54,74,254);
-    border: 5px solid rgb(54,74,254);
+    border: 4px solid rgb(54,74,254);
     border-radius: 2em;
     padding: 10px;
-    font-weight: 800;
+    font-weight: 600;
     margin-left: 10px;
 }
 nav a.vk:hover{
@@ -98,11 +69,11 @@ nav a.vk:hover{
   border-color: rgba(54,74,254,0.5);
 }
 nav a:last-child{
-  border: 5px solid rgb(235,67,31);
+  border: 4px solid rgb(235,67,31);
   border-radius: 2em;
   color: rgb(235,67,31);
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 600;
   margin-left: 20px;
 }
 nav a:last-child:hover{
@@ -115,15 +86,10 @@ nav a:last-child:hover{
 .lesson {
   text-align: center;
 }
-.left-border{
-  border-left: 1px solid rgb(213,213,213);
+.lesson h3{
+  font-weight: normal;
 }
-.right-border{
-  border-right: 1px solid rgb(213,213,213);
-}
-.bottom-border{
-  border-bottom: 1px solid rgb(213,213,213);
-}
+
 .unslider-arrow.prev,
 .unslider-arrow.next{
   font-size: 60px;
@@ -134,7 +100,10 @@ nav a:last-child:hover{
   line-height: 40px;
   margin:0 10px;
 }
-
+.cost{
+  color: rgb(52,74,254);
+  font-size: 20px;
+}
 .lesson picture{
   margin: auto;
   height: 200px;
@@ -168,6 +137,8 @@ nav a:last-child:hover{
   border-width: 5px;
   border-style: solid;
   display: inline-block;
+  font-size: 14px;
+  margin-top: 10px;
 }
 .metro.m-blue{
   border-color: rgb(15,119,193);
@@ -181,25 +152,7 @@ nav a:last-child:hover{
 .metro.m-orange{
   border-color: rgb(243,128,24);
 }
-input[type=submit]{
-  background-color: rgb(235,67,31);
-  border-radius: 2em;
-  border: 5px solid rgb(235,67,31);
-  color: #fff;
-  font-size: 20px;
-  padding: 5px 20px;
-text-align: center;
-width: 10em;
-margin: auto;
-display: block;
-font-weight: 600;
-}
-input[type=submit]:hover{
-  background-color: rgb(235,67,31,0.5);
-  border-color: rgb(235,67,31, 0.5);
-  color: rgba(255,255,255,0.5);
-  cursor: pointer;
-  }
+
 .phone,.email{
   font-size: 1.3em;
   text-align: center;
@@ -216,6 +169,56 @@ hr{
   border: 1px solid rgb(214,214,214);
 }
 /*FORM*/
+.ss-select,
+.ss-required{
+  position: relative;
+}
+.ss-select:after{
+  content: "˅";
+  font-family: monospace;
+  width: 40px;
+  height: 50px;
+  font-size: 40px;
+  vertical-align: middle;
+  position: absolute;
+  right: 0px;
+  top: -1px;
+  color: rgb(70,103,255);
+  z-index: 0;
+}
+.ss-required:after{
+  display: block;
+  content: "●";
+  font-family: monospace;
+  width: 40px;
+  height: 50px;
+  font-size: 22px;
+  line-height: 50px;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  color: rgb(241,90,41);
+}
+input[type=submit]{
+  background-color: rgb(235,67,31);
+  border-radius: 2em;
+  border: 5px solid rgb(235,67,31);
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 19px;
+text-align: center;
+width: auto;
+margin: auto;
+display: block;
+font-weight: 600;
+}
+input[type=submit]:hover{
+  background-color: rgb(235,67,31,0.5);
+  border-color: rgb(235,67,31, 0.5);
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  }
+
 input, select{
   width: 100%;
   border-radius: 2em;
@@ -224,13 +227,17 @@ input, select{
   padding: 0 20px;
   box-sizing: border-box;
 }
-
+#form h2{
+  color: rgb(52,74,254);
+  font-weight: normal;
+}
 
 option:disabled
 {
     color: #ccc;
 }
 /* HELPERS */
+
 .text-center{
   text-align: center !important;
 }
@@ -246,6 +253,18 @@ option:disabled
 .bottom-red{
   border-bottom: 4px solid rgb(234,67,32);
 }
+.left-border{
+  border-left: 1px solid rgb(213,213,213);
+}
+.right-border{
+  border-right: 1px solid rgb(213,213,213);
+}
+.bottom-border{
+  border-bottom: 1px solid rgb(213,213,213);
+}
+.mt20{
+  margin-top: 20px !important;
+}
 .mb40{
   margin-bottom: 40px !important;
 }
@@ -254,4 +273,10 @@ option:disabled
 }
 .muted{
   color: #999;
+}
+.vat{
+  vertical-align: top !important;
+}
+.vam{
+  vertical-align: middle !important;
 }
