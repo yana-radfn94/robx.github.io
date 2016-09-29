@@ -129,7 +129,9 @@ nav a:last-child:hover{
 .location h3{
   margin: 0;
 }
-
+#vk_groups{
+margin: 0 auto;
+}
 .metro{
   margin-bottom: 20px;
   border-radius: 2em;
