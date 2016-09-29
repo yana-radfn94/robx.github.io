@@ -90,7 +90,7 @@ nav a.vk{
     border-radius: 2em;
     padding: 10px;
     font-weight: 800;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 nav a.vk:hover{
   cursor: pointer;
@@ -103,7 +103,7 @@ nav a:last-child{
   color: rgb(235,67,31);
   font-size: 18px;
   font-weight: 800;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 nav a:last-child:hover{
   color: rgba(235,67,31,0.5);
@@ -128,6 +128,13 @@ nav a:last-child:hover{
 .unslider-arrow.next{
   font-size: 60px;
 }
+.big-number{
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 40px;
+  margin:0 10px;
+}
+
 .lesson picture{
   margin: auto;
   height: 200px;
@@ -144,6 +151,7 @@ nav a:last-child:hover{
   width: 148px;
   height: 44px;
   right: 0;
+  top: 20px;
   box-sizing: border-box;
   padding-top: 0;
   font-size: 18px;
@@ -184,7 +192,7 @@ text-align: center;
 width: 10em;
 margin: auto;
 display: block;
-font-weight: bold;
+font-weight: 600;
 }
 input[type=submit]:hover{
   background-color: rgb(235,67,31,0.5);
@@ -232,9 +240,18 @@ option:disabled
 .bg-lightgray{
   background: rgb(242,242,242) !important;
 }
+.bottom-blue{
+  border-bottom: 4px solid rgb(53,74,254);
+}
+.bottom-red{
+  border-bottom: 4px solid rgb(234,67,32);
+}
 .mb40{
   margin-bottom: 40px !important;
 }
 .ib{
   display: inline-block !important;
+}
+.muted{
+  color: #999;
 }
