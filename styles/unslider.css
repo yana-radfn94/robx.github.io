@@ -67,3 +67,30 @@
     right: auto;
      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='51' height='100'><line x1='50' y1='1' x2='1' y2='50' stroke-width='2' stroke-linecap='round' stroke='#939291'  /><line x1='1' y1='50' x2='50' y2='99' stroke-linecap='round' stroke-width='2' stroke='rgb(129,129,129)' /> </svg>")  no-repeat;
 }
+
+.unslider-nav{
+  padding-top: 40px;
+  padding-bottom: 7px;
+}
+.unslider-nav ol {
+ list-style: none;
+ text-align: center;
+}
+.unslider-nav ol li {
+ display: inline-block;
+ vertical-align: middle;
+ width: 8px;
+ height: 8px;
+ margin: 0 8px;
+ background: transparent;
+ border-radius: 8px;
+ overflow: hidden;
+ text-indent: -999em;
+ border: 1px solid rgb(52,74,254);
+ cursor: pointer;
+}
+.unslider-nav ol li.unslider-active {
+ background: rgb(52,74,254);
+ border-width: 0;
+ cursor: default;
+}
