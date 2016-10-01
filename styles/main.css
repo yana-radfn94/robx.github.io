@@ -291,6 +291,13 @@ option:disabled{
 .mb40{
   margin-bottom: 40px !important;
 }
+.ml60{
+  margin-left: 60px !important;
+}
+.mr60{
+  margin-right: 60px !important;
+}
+
 .ib{
   display: inline-block !important;
 }
@@ -302,4 +309,15 @@ option:disabled{
 }
 .vam{
   vertical-align: middle !important;
+}
+.video{
+  display: none;
+}
+@media only screen and (max-width: 760px) {
+  .video{
+    display: block;
+  }
+  #videoframe {
+    display: none;
+  }
 }
