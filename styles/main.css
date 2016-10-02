@@ -313,6 +313,19 @@ option:disabled{
 .video{
   display: none;
 }
+@media only screen and (max-width: 1220px) {
+  a.vk, a.vk + a{
+    display: none;
+  }
+
+}
+@media only screen and (max-width: 1030px) {
+  header nav a{
+    padding: 9px 10px;
+  }
+
+}
+
 @media only screen and (max-width: 760px) {
   .video{
     display: block;
